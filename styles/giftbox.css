@@ -6,6 +6,11 @@
     height: 10rem;
     cursor: pointer;
     opacity: 1;
+    transform-origin: left top;
+}
+
+.gift-box:hover {
+    animation: shake 0.5s infinite;
 }
 
 .gift-box-cap {
@@ -145,5 +150,23 @@
     rotate: 360deg;
     scale: 20;
     transition: var(--gift-box-open-time);
+}
+
+@keyframes shake {
+    0% {
+        rotate: 0;
+    }
+    25% {
+        rotate: 10deg;
+    }
+    50% {
+        rotate: -10deg;
+    }
+    75% {
+        rotate: 5deg;
+    }
+    100% {
+        rotate: 0;
+    }
 }
 

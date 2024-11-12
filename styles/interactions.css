@@ -32,6 +32,7 @@
     transform: translateX(-50%);
     transform-origin: left;
     width: max-content;
+    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.5));
 }
 
 .interactions button:hover {
@@ -40,5 +41,23 @@
 
 .interactions button:active {
     scale: 0.9;
+}
+
+.interactions .age {
+    position: fixed;
+    padding: 1rem 2rem;
+    font-size: 3rem;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: default;
+    transition: 0.3s;
+    z-index: 10000000;
+    left: 50%;
+    top: 2rem;
+    transform: translateX(-50%);
+    transform-origin: left;
+    width: max-content;
+    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.5));
 }
 

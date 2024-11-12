@@ -4,6 +4,7 @@
 @import url('gifts.css');
 @import url('interactions.css');
 @import url('messages.css');
+@import url('particles.css');
 
 :root {
     --gift-box-open-time: 3s ease-in-out;
