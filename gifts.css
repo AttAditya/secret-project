@@ -1,0 +1,14 @@
+*:has(.gift-box:not(.open)) .gift-packed > div {
+    scale: 0;
+    pointer-events: none;
+}
+
+.gift-packed {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20rem;
+    height: 20rem;
+    z-index: -1;
+}
+

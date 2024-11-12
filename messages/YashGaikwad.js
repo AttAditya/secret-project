@@ -4,3 +4,4 @@ let messageData = {
 };
 
 data[messageData.author] = messageData;
+

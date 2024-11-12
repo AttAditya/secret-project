@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Meow+Script&display=swap');
 @import url('giftbox.css');
 @import url('cake.css');
+@import url('gifts.css');
+@import url('interactions.css');
 
 :root {
     --gift-box-open-time: 3s ease-in-out;
@@ -34,14 +36,5 @@ body {
     height: 40rem;
     position: relative;
     transform: none;
-}
-
-.gift-packed {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 20rem;
-    height: 20rem;
-    z-index: -1;
 }
 
