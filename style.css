@@ -3,6 +3,7 @@
 @import url('cake.css');
 @import url('gifts.css');
 @import url('interactions.css');
+@import url('messages.css');
 
 :root {
     --gift-box-open-time: 3s ease-in-out;

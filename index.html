@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="style.css">
 
     <script src="preloader.js"></script>
-    <script src=""></script>
     
     <script src="messages/AttAditya.js"></script>
     <script src="messages/Ashmit.js"></script>
@@ -75,11 +74,11 @@
         </div>
 
         <div class="interactions">
-            <button onclick="location.href = 'https://github.com/AttAditya/secret-project/tree/main/messages';">
+            <button onclick="document.querySelector('.messages.hidden').classList.remove('hidden');">
                 Read messages...
             </button>
 
-            <div class="interaction-messages"></div>
+            <div class="messages hidden"></div>
         </div>
     </div>
 </body>
