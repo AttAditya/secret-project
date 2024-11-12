@@ -1,4 +1,4 @@
-let messageData = {
+var messageData = {
     author: "Hardik Jumnani",
     message: "🎉 Wishing you a very happy birthday, Mrinal Sir! 🎂\
                 It has been a pleasure learning Web Development with you,\
