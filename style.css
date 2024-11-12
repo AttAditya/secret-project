@@ -18,6 +18,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: dodgerblue;
+    backdrop-filter: brightness(0.7);
 }
 
 .container {
@@ -53,6 +55,7 @@ body {
     width: 100%;
     height: 100%;
     background-color: dodgerblue;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
 }
 
 .ribbon-bow {
