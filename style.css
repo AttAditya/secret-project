@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Meow+Script&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transform: translate(-50%, -50%);
+    font-family: 'Lavishly Yours', cursive;
+}
+
+html, body {
+    width: 100vw;
+    height: 100vh;
+    transform: none;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 40rem;
+    height: 40rem;
+    position: relative;
+    transform: none;
+}
+
+.gift-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 10rem;
+    height: 10rem;
+}
+
+.gift-box-cap {
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    width: 120%;
+    height: 40%;
+    background-color: dodgerblue;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.gift-box-wrapper {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    background-color: dodgerblue;
+}
+
+.ribbon-bow {
+    position: absolute;
+    display: block;
+    top: -5%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+}
+
+.ribbon-special {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    scale: 0.5;
+    position: absolute;
+}
+
+.ribbon-special {
+    --c: #d0016c;
+
+    padding: 1.2em 2.4em 2.2em;
+    aspect-ratio: 1;
+    display: grid;
+    place-content: center;
+    text-align: center;
+    z-index: 0;
+    width: fit-content;
+    box-sizing: border-box;
+    transform: none;
+}
+
+.ribbon-special:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    inset: 30% 0 auto;
+    aspect-ratio: 1;
+    background: color-mix(in srgb, var(--c), #000 35%);
+    clip-path: polygon(calc(100%/3) 0, calc(200%/3) 0, 100% 90%, calc(200%/3) 100%, calc(100%/3) 0, calc(200%/3) 0, calc(100%/3) 100%, 0 90%);
+    transform: none;
+}
+
+.ribbon-special:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    background: var(--c);
+    -webkit-mask:
+        radial-gradient(at 70% 31%, #000 29%, #0000 30%),
+        radial-gradient(at 30% 31%, #000 29%, #0000 30%),
+        linear-gradient(#000 0 0) bottom/100% 50% no-repeat;
+    clip-path: polygon(-41% 0, 50% 91%, 141% 0);
+    transform: none;
+}
+
+.ribbons {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+
+.ribbons > div {
+    background-color: #d0016c;
+}
+
+.ribbon-horizontal {
+    position: absolute;
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+}
+
+.ribbon-vertical {
+    position: absolute;
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    top: 40%;
+    left: 50%;
+}
+
